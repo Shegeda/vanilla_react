@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+// Импортим todo из компонентов
+import Todo from './components/todo';
 
+// созд функицию App которая возвращает разметку "абзац" и компонент "todo" с свойством текст "Learn React "
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>My todos</h1>
+      <Todo text='Learn React' />
     </div>
-  );
+  )
 }
-
+// експортим по умолчанию компонент "App"
 export default App;
